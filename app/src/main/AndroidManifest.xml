@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitaltracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.provider.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/hosp"
+        android:label="Hospital Tracker"
+        android:roundIcon="@mipmap/hosp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SignInDemo"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC5j_zho_mU0PmVQ4pEarUo8ZSXNPvj78Q" />
+        <activity
+            android:name="com.example.hospitaltracker.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hospitaltracker.HomePage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hospitaltracker.Developer"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hospitaltracker.Designer"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hospitaltracker.Apps"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hospitaltracker.Server"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hospitaltracker.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
